@@ -7,9 +7,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import com.example.fragmentdemo.databinding.SellfragmentLayoutBinding;
+
 public class SellFragment extends Fragment {
+    SellfragmentLayoutBinding binding;
     public static SellFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -22,8 +26,7 @@ public class SellFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.sellfragment_layout,container,false);
-        //Xi li all
-        return view;
+        binding = DataBindingUtil.inflate(inflater,R.layout.sellfragment_layout,container,false);
+        return binding.getRoot();
     }
 }
