@@ -1,7 +1,3 @@
 <resources>
-    <string name="app_name">FragmentDemo</string>
-    <string name="title_activity_main3">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">FragmentAll</string>
 </resources>

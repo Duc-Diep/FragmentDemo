@@ -5,31 +5,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00BCD4">
-
-        <TextView
-            android:id="@+id/tv2"
+        <Button
+            android:id="@+id/btnMoveToActivity2"
+            android:layout_above="@id/btnMoveToFr1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Dây là fragment 2"></TextView>
-        <Button
-            android:layout_centerInParent="true"
-            android:layout_below="@id/tv2"
-            android:id="@+id/btnMovetoFr1"
-            android:text="Chuyển lại Fragment 1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:text="Chuyển sang Activity 2">
 
         </Button>
         <Button
+            android:id="@+id/btnMoveToFr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@id/btnMovetoFr1"
-            android:id="@+id/btnStarActivity2"
-            android:text="Close App"
+            android:text="Chuyển sang fragment 1">
+
+        </Button>
+        <TextView
+            android:layout_below="@id/btnMoveToFr1"
+            android:text="Đây là fragment 2"
+            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-        </Button>
+        </TextView>
     </RelativeLayout>
 
 </layout>
