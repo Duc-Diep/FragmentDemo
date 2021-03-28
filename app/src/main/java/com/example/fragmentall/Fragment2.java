@@ -52,7 +52,7 @@ public class Fragment2 extends Fragment {
         String str = getArguments().getString("name");
         Toast.makeText(getContext(), str, Toast.LENGTH_SHORT).show();
         List<Person> list = getArguments().getParcelableArrayList("list");
-        Toast.makeText(getContext(), list.size(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), list.size()+"", Toast.LENGTH_SHORT).show();
         binding.btnMoveToActivity2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
